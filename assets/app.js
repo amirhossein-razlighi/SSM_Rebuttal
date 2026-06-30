@@ -470,15 +470,19 @@
       showThanks(false);
     } catch (e) {
       console.error("[study] submit failed:", e);
-      showThanks(true, "We couldn't reach the server. Please download your responses and send them to the researcher.");
+      showThanks(true,
+        "We couldn't save your responses to the server. " +
+        "Please tap <b>Download my responses</b> below and email the file to " +
+        "<a href=\"mailto:arazlighi@gmail.com?subject=Motion%20study%20responses\">arazlighi@gmail.com</a>. " +
+        "Thank you — your answers still count!", true);
       setupDownload(payload);
     }
   }
 
-  function showThanks(showDownload, msg) {
+  function showThanks(showDownload, msg, isHtml) {
     $("submitting").style.display = "none";
     $("thanks").style.display = "block";
-    if (msg) $("thanksMsg").textContent = msg;
+    if (msg) { if (isHtml) $("thanksMsg").innerHTML = msg; else $("thanksMsg").textContent = msg; }
     $("downloadBtn").style.display = showDownload ? "inline-block" : "none";
   }
 
