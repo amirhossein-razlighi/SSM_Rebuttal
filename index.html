@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Video Motion Edit — User Study</title>
+  <meta name="robots" content="noindex" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <div class="topbar" id="topbar" style="display:none">
+    <div class="topbar-inner">
+      <div class="brand">Motion Edit <span>Study</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+      <div class="progress-meta" id="progressMeta">0 / 0</div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div id="localBanner" class="local-banner" style="display:none">
+      Local preview mode — your responses are <b>not</b> sent to a server; they'll be offered as a JSON download at the end.
+    </div>
+
+    <!-- INTRO -->
+    <section id="introScreen" class="panel intro">
+      <h1>Which video best performs the described motion?</h1>
+      <div class="sub">A short, anonymous study. No login, no personal data. Takes about 10–15 minutes.</div>
+      <ol>
+        <li>For each scenario you'll see a short text instruction (the <b>intended edit</b>) and several short video clips.</li>
+        <li><b>Pick your top 3</b> clips — the ones that best perform the described motion while looking natural.
+          Click clips in order: 1st click =
+          <span class="badge-demo b-gold">1</span> 2nd click =
+          <span class="badge-demo b-silver">2</span> 3rd click =
+          <span class="badge-demo b-bronze">3</span>. Click a chosen clip again to undo it.</li>
+        <li>For each of your top 3, set two quick ratings (0–5), where red = poor and green = excellent:
+          <ul>
+            <li><b>Motion quality</b> — does the motion happen smoothly and naturally?
+              Sudden jumps, jitter, flickering, or unnatural/physically-impossible movement = poor.</li>
+            <li><b>Visual quality</b> — does the image stay clean and consistent?
+              Identity collapse, subjects changing, shifts in appearance or colors, blur, or artifacts = poor.</li>
+          </ul>
+        </li>
+        <li>Finally, mark the single <b>worst</b> clip with a red
+          <span class="badge-demo b-worst">✗</span> (no rating needed).</li>
+        <li>There are <b id="introCount">8</b> scenarios. A clip looping = it just repeats; watch as long as you like.</li>
+      </ol>
+      <div class="btn-row">
+        <span class="hint">No names or emails are collected.</span>
+        <button class="btn" id="startBtn">Start →</button>
+      </div>
+    </section>
+
+    <!-- SCENARIO -->
+    <section id="scenarioScreen" class="panel" style="display:none">
+      <div class="scenario-head">
+        <div class="eyebrow" id="scEyebrow">Scenario 1 of 8</div>
+        <div class="prompt-box">
+          <div class="label">Intended edit</div>
+          <div class="text" id="scPrompt">—</div>
+        </div>
+        <div class="task-line">Pick your <strong>top 3</strong> clips that best perform this motion, then rate motion &amp; visual quality for each.</div>
+      </div>
+      <div class="grid" id="grid"></div>
+      <div class="btn-row" id="scActions">
+        <button class="btn btn-ghost" id="backBtn" style="display:none">← Back</button>
+        <span class="hint" id="scHint">Select 3 clips and rate each to continue.</span>
+        <button class="btn" id="nextBtn" disabled>Next →</button>
+      </div>
+    </section>
+
+    <!-- SUBMITTING / DONE -->
+    <section id="doneScreen" class="panel center" style="display:none">
+      <div id="submitting">
+        <div class="spinner"></div>
+        <h2>Submitting your responses…</h2>
+        <div class="muted">One moment.</div>
+      </div>
+      <div id="thanks" style="display:none">
+        <div class="big-check">✅</div>
+        <h2>Thank you!</h2>
+        <div class="muted" id="thanksMsg">Your responses have been recorded. You can close this tab.</div>
+        <div class="btn-row" style="justify-content:center; flex-wrap:wrap">
+          <button class="btn" id="downloadBtn" style="display:none">Download my responses (JSON)</button>
+          <button class="btn btn-ghost" id="redoBtn">Take the survey again</button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="assets/config.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
