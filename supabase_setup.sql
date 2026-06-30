@@ -38,3 +38,8 @@ create policy "anon can insert responses"
   for insert
   to anon
   with check (true);
+
+-- Table-level privilege so the public anon key can insert even if the
+-- project's "auto-expose new tables" option is off. RLS (above) still
+-- restricts the anon role to inserts only — no read/update/delete.
+grant insert on table public.responses to anon;
