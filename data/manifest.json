@@ -5,8 +5,7 @@
     "random_s42",
     "zero_init",
     "lora_all",
-    "lora_audio",
-    "z_res"
+    "lora_audio"
   ],
   "scenarios": [
     {
@@ -20,8 +19,7 @@
         "random_s42": "videos/bird_opens_wings/random_s42.mp4",
         "zero_init": "videos/bird_opens_wings/zero_init.mp4",
         "lora_all": "videos/bird_opens_wings/lora_all.mp4",
-        "lora_audio": "videos/bird_opens_wings/lora_audio.mp4",
-        "z_res": "videos/bird_opens_wings/zvid.mp4"
+        "lora_audio": "videos/bird_opens_wings/lora_audio.mp4"
       }
     },
     {
@@ -35,8 +33,7 @@
         "random_s42": "videos/bugatti_lights/random_s42.mp4",
         "zero_init": "videos/bugatti_lights/zero_init.mp4",
         "lora_all": "videos/bugatti_lights/lora_all.mp4",
-        "lora_audio": "videos/bugatti_lights/lora_audio.mp4",
-        "z_res": "videos/bugatti_lights/z_vid.mp4"
+        "lora_audio": "videos/bugatti_lights/lora_audio.mp4"
       }
     },
     {
@@ -50,8 +47,7 @@
         "random_s42": "videos/dog_jumping/random_s42.mp4",
         "zero_init": "videos/dog_jumping/zero_init.mp4",
         "lora_all": "videos/dog_jumping/lora_all.mp4",
-        "lora_audio": "videos/dog_jumping/lora_audio.mp4",
-        "z_res": "videos/dog_jumping/z_vid.mp4"
+        "lora_audio": "videos/dog_jumping/lora_audio.mp4"
       }
     },
     {
@@ -65,8 +61,7 @@
         "random_s42": "videos/dog_yawning/random_s42.mp4",
         "zero_init": "videos/dog_yawning/zero_init.mp4",
         "lora_all": "videos/dog_yawning/lora_all.mp4",
-        "lora_audio": "videos/dog_yawning/lora_audio.mp4",
-        "z_res": "videos/dog_yawning/zvid.mp4"
+        "lora_audio": "videos/dog_yawning/lora_audio.mp4"
       }
     },
     {
@@ -80,8 +75,7 @@
         "random_s42": "videos/man_pets_dog/random_s42.mp4",
         "zero_init": "videos/man_pets_dog/zero_init.mp4",
         "lora_all": "videos/man_pets_dog/lora_all.mp4",
-        "lora_audio": "videos/man_pets_dog/lora_audio.mp4",
-        "z_res": "videos/man_pets_dog/zvid.mp4"
+        "lora_audio": "videos/man_pets_dog/lora_audio.mp4"
       }
     },
     {
@@ -95,8 +89,7 @@
         "random_s42": "videos/man_raising_hand/random_s42.mp4",
         "zero_init": "videos/man_raising_hand/zero_init.mp4",
         "lora_all": "videos/man_raising_hand/lora_all.mp4",
-        "lora_audio": "videos/man_raising_hand/lora_audio.mp4",
-        "z_res": "videos/man_raising_hand/zvid.mp4"
+        "lora_audio": "videos/man_raising_hand/lora_audio.mp4"
       }
     },
     {
@@ -110,8 +103,7 @@
         "random_s42": "videos/red_car_door_opens/random_s42.mp4",
         "zero_init": "videos/red_car_door_opens/zero_init.mp4",
         "lora_all": "videos/red_car_door_opens/lora_all.mp4",
-        "lora_audio": "videos/red_car_door_opens/lora_audio.mp4",
-        "z_res": "videos/red_car_door_opens/zvid.mp4"
+        "lora_audio": "videos/red_car_door_opens/lora_audio.mp4"
       }
     },
     {
@@ -125,8 +117,7 @@
         "random_s42": "videos/red_rose_blooming/random_s42.mp4",
         "zero_init": "videos/red_rose_blooming/zero_init.mp4",
         "lora_all": "videos/red_rose_blooming/lora_all.mp4",
-        "lora_audio": "videos/red_rose_blooming/lora_audio.mp4",
-        "z_res": "videos/red_rose_blooming/zvid.mp4"
+        "lora_audio": "videos/red_rose_blooming/lora_audio.mp4"
       }
     }
   ]
