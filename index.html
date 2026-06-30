@@ -54,11 +54,23 @@
     <section id="scenarioScreen" class="panel" style="display:none">
       <div class="scenario-head">
         <div class="eyebrow" id="scEyebrow">Scenario 1 of 8</div>
-        <div class="prompt-box">
-          <div class="label">Intended edit</div>
-          <div class="text" id="scPrompt">—</div>
+        <div class="head-grid">
+          <div class="source-col">
+            <div class="label">Source video</div>
+            <video id="scSource" class="source-vid" muted loop autoplay playsinline webkit-playsinline preload="auto"></video>
+          </div>
+          <div class="prompt-col">
+            <div class="prompt-box">
+              <div class="label">Intended edit</div>
+              <div class="text" id="scPrompt">—</div>
+            </div>
+            <div class="hint-box" id="scHintBox" style="display:none">
+              <span class="hint-icon">💡</span>
+              <span id="scHintText"></span>
+            </div>
+          </div>
         </div>
-        <div class="task-line">Pick your <strong>top 3</strong> clips that best perform this motion, then rate motion &amp; visual quality for each.</div>
+        <div class="task-line">From the <strong>source video</strong> above, pick the <strong>top 3</strong> clips that best perform the intended edit, then rate motion &amp; visual quality for each.</div>
       </div>
       <div class="grid" id="grid"></div>
       <div class="btn-row" id="scActions">

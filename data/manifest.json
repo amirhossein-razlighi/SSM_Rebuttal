@@ -12,6 +12,8 @@
     {
       "id": "bird_opens_wings",
       "prompt": "A bird openning its wings.",
+      "input": "videos/bird_opens_wings/input.mp4",
+      "hint": "Watch for unnatural wing movement, sudden artifacts appearing, and blurring or vanishing of scene elements.",
       "videos": {
         "ours": "videos/bird_opens_wings/ours.mp4",
         "random_s1": "videos/bird_opens_wings/random_s1.mp4",
@@ -25,6 +27,8 @@
     {
       "id": "bugatti_lights",
       "prompt": "The car front lights turn on and off periodically.",
+      "input": "videos/bugatti_lights/input.mp4",
+      "hint": "Watch whether the lights actually turn on and off, and for flicker or color/lighting artifacts.",
       "videos": {
         "ours": "videos/bugatti_lights/ours.mp4",
         "random_s1": "videos/bugatti_lights/random_s1.mp4",
@@ -38,6 +42,8 @@
     {
       "id": "dog_jumping",
       "prompt": "The dog jumps up into the air.",
+      "input": "videos/dog_jumping/input.mp4",
+      "hint": "Watch whether the jump follows a natural, real-world trajectory for a dog.",
       "videos": {
         "ours": "videos/dog_jumping/ours.mp4",
         "random_s1": "videos/dog_jumping/random_s1.mp4",
@@ -51,6 +57,8 @@
     {
       "id": "dog_yawning",
       "prompt": "A dog yawning",
+      "input": "videos/dog_yawning/input.mp4",
+      "hint": "Watch for exaggerated motion, sudden artifacts, and blurring.",
       "videos": {
         "ours": "videos/dog_yawning/ours.mp4",
         "random_s1": "videos/dog_yawning/random_s1.mp4",
@@ -64,6 +72,8 @@
     {
       "id": "man_pets_dog",
       "prompt": "The man pets the dog.",
+      "input": "videos/man_pets_dog/input.mp4",
+      "hint": "Watch for identity changes (subject's appearance) and unnatural motion.",
       "videos": {
         "ours": "videos/man_pets_dog/ours.mp4",
         "random_s1": "videos/man_pets_dog/random_s1.mp4",
@@ -77,6 +87,8 @@
     {
       "id": "man_raising_hand",
       "prompt": "A man raising his right hand up and holding it there",
+      "input": "videos/man_raising_hand/input.mp4",
+      "hint": "Watch whether the hand stays correct (fingers, palm) and the motion looks natural.",
       "videos": {
         "ours": "videos/man_raising_hand/ours.mp4",
         "random_s1": "videos/man_raising_hand/random_s1.mp4",
@@ -90,6 +102,8 @@
     {
       "id": "red_car_door_opens",
       "prompt": "A red car door opens.",
+      "input": "videos/red_car_door_opens/input.mp4",
+      "hint": "Watch for color or lighting shifts on the car, and odd camera movement that hurts motion or quality.",
       "videos": {
         "ours": "videos/red_car_door_opens/ours.mp4",
         "random_s1": "videos/red_car_door_opens/random_s1.mp4",
@@ -103,6 +117,8 @@
     {
       "id": "red_rose_blooming",
       "prompt": "A red rose blooming.",
+      "input": "videos/red_rose_blooming/input.mp4",
+      "hint": "Watch for sudden or unnatural motion, and color shifts in the rose or the background.",
       "videos": {
         "ours": "videos/red_rose_blooming/ours.mp4",
         "random_s1": "videos/red_rose_blooming/random_s1.mp4",

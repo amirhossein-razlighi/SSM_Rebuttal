@@ -100,6 +100,29 @@ body {
 .task-line { color: var(--muted); font-size: 14px; margin-top: 12px; }
 .task-line strong { color: var(--text); }
 
+/* source video + prompt side by side */
+.head-grid { display: flex; gap: 16px; align-items: stretch; margin-top: 8px; }
+.source-col { flex: 0 0 300px; max-width: 40%; }
+.prompt-col { flex: 1 1 auto; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.source-col .label { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px; }
+.source-vid {
+  width: 100%; aspect-ratio: 16/9; background: #000; display: block;
+  border-radius: 12px; border: 1px solid var(--border); object-fit: cover;
+}
+.prompt-col .prompt-box { margin-top: 0; flex: 1 1 auto; display: flex; flex-direction: column; justify-content: center; }
+
+.hint-box {
+  display: flex; align-items: flex-start; gap: 8px;
+  background: rgba(108,140,255,.08); border: 1px solid rgba(108,140,255,.25);
+  border-radius: 10px; padding: 9px 12px; color: var(--muted); font-size: 13px; line-height: 1.45;
+}
+.hint-box .hint-icon { flex: 0 0 auto; }
+
+@media (max-width: 720px) {
+  .head-grid { flex-direction: column; }
+  .source-col { flex: none; max-width: 100%; }
+}
+
 /* ---------- video grid ---------- */
 .grid {
   display: grid;

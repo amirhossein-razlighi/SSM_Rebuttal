@@ -151,6 +151,17 @@
 
     $("scEyebrow").textContent = `Scenario ${STORE.scIndex + 1} of ${STORE.order.length}`;
     $("scPrompt").textContent = `“${sc.prompt}”`;
+
+    // source video
+    const src = $("scSource");
+    if (sc.input) { src.src = sc.input; src.load(); src.play().catch(() => {}); src.style.display = "block"; }
+    else { src.removeAttribute("src"); src.style.display = "none"; }
+
+    // per-scenario rating hint
+    const hintBox = $("scHintBox");
+    if (sc.hint) { $("scHintText").textContent = sc.hint; hintBox.style.display = "flex"; }
+    else { hintBox.style.display = "none"; }
+
     $("backBtn").style.display = STORE.scIndex > 0 ? "inline-block" : "none";
     $("nextBtn").textContent = STORE.scIndex === STORE.order.length - 1 ? "Finish ✓" : "Next →";
     updateProgress();
