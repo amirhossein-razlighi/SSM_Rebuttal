@@ -2,3 +2,6 @@
 **/.DS_Store
 scratchpad/
 .claude/
+
+# Local-only researcher dashboard (contains DB credentials + participant data)
+dashboard/
